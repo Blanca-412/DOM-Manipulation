@@ -1,5 +1,3 @@
-// main.js
-
 const IMAGE_URL = "http://placehold.co/100";
 
 const users = [
@@ -23,7 +21,6 @@ const users = [
     }
 ];
 
-// Function to create a user card
 function createCard(user) {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -48,7 +45,6 @@ function createCard(user) {
     return card;
 }
 
-// Function to render user cards
 function renderUsers(users) {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = ''; // Clear existing content
@@ -58,7 +54,6 @@ function renderUsers(users) {
     });
 }
 
-// Function to handle DOM manipulation example
 function setupDOMManipulation() {
     const p1 = document.getElementById("p1");
     const textInput = document.getElementById("username-input");
@@ -68,7 +63,6 @@ function setupDOMManipulation() {
     });
 }
 
-// Event listeners for links
 document.getElementById("show-cards").addEventListener("click", () => {
     document.getElementById("card-container").style.display = "block";
     document.getElementById("dom-example").style.display = "none";
@@ -81,5 +75,4 @@ document.getElementById("show-dom").addEventListener("click", () => {
     setupDOMManipulation();
 });
 
-// Initially hide the card container
 document.getElementById("card-container").style.display = "none";
